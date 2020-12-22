@@ -1,0 +1,15 @@
+{
+  "name": "clas-4",
+  "version": "1.0.0",
+  "description": "const Http = new XMLHttpRequest();\r const url='https://jsonplaceholder.typicode.com/posts';\r Http.open(\"GET\", url);\r Http.send();",
+  "main": "ap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ap.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
