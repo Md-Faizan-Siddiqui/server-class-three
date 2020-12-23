@@ -1,36 +1,63 @@
 
 
-const Http = new XMLHttpRequest();
 
 function get() {
-    const url = 'https://192.168.50.177/bulb';
-    Http.open("GET", url);
-    Http.send();
+    const Http = new XMLHttpRequest();
+    const url='http://192.168.50.210:3000/bulb';
+    Http.open("POST", url);
+    
+    Http.setRequestHeader("Content-Type", "application/json");
+    Http.send(JSON.stringify({name:"Get", time:"2pm"}));
+    
+    Http.onreadystatechange = (e) => {
+      console.log(Http.responseText)
+    }
 
 }
 
 
 function post() {
-    const url = 'https://192.168.50.177/bulb';
+    const Http = new XMLHttpRequest();
+    const url='http://192.168.50.210:3000/bulb';
     Http.open("POST", url);
-    Http.send();
+    
+    Http.setRequestHeader("Content-Type", "application/json");
+    Http.send(JSON.stringify({name:"Faizan", time:"2pm"}));
+    
+    Http.onreadystatechange = (e) => {
+      console.log(Http.responseText)
+    }
 
 }
 
 
 function put() {
-    const url = 'https://192.168.50.177/bulb';
-    Http.open("PUT", url);
-    Http.send();
+    const Http = new XMLHttpRequest();
+    const url='http://192.168.50.210:3000/bulb';
+    Http.open("POST", url);
+    
+    Http.setRequestHeader("Content-Type", "application/json");
+    Http.send(JSON.stringify({name:"Put", time:"2pm"}));
+    
+    Http.onreadystatechange = (e) => {
+      console.log(Http.responseText)
+    }
 
 }
 
 
 
 function dlt() {
-    const url = 'https://192.168.50.177/bulb';
-    Http.open("DELETE", url);
-    Http.send();
+    const Http = new XMLHttpRequest();
+    const url='http://192.168.50.210:3000/bulb';
+    Http.open("POST", url);
+    
+    Http.setRequestHeader("Content-Type", "application/json");
+    Http.send(JSON.stringify({name:"Siddiqui", time:"2pm"}));
+    
+    Http.onreadystatechange = (e) => {
+      console.log(Http.responseText)
+    }
     
 }
 
